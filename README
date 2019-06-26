@@ -1,1 +1,14 @@
+This is a application buit using SpringBoot, MySQL, JPA and hibernate
+This web service supports the following REST api operations:
+1. POST (to put data into the database)
+2. GET (to get data from the database)
+3. PUT (To update th database)
+4. DELETE ( to delete a object from the database)
 
+Here there are 3 tables:
+Products - To store the product details. We can use the API to add and update, delete the inventory items.
+Address - To store the entire shipping address.
+Orders- to keep a track of the orders of the customers. It contains Products (which can be linked to products table with a one to many relationship).
+However, now i have kept it as a input from user. Address firld is linked to the Address table to get the shipping address. The total is again a manual entry for now.
+
+The API is tested using Postman.
